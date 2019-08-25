@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+P:\Data\Workspace STS\Ejemplos\ecommerce\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2826682643.index
+3840899011.index
+1852960997.index
+637801598.index
+3230764976.index
+3136066296.index
+2785889402.index
