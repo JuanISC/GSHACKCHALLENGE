@@ -10,8 +10,8 @@ import mx.com.server.azteca.spring.service.IComprasService;
 @Service
 public class ComprasService implements IComprasService{
 	
-	@Autowired
-	private IComprasRepository comprasRepository;
+//	@Autowired
+//	private IComprasRepository comprasRepository;
 
 	public CompraBean validarCompra(CompraBean bean) {
 //		comprasRepository.validarCompra(bean);

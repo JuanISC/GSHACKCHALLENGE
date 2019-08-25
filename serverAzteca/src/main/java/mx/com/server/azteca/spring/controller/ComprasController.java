@@ -12,8 +12,9 @@ import mx.com.server.azteca.spring.service.IComprasService;
 @Controller
 @RequestMapping("/compras")
 public class ComprasController {
-	@Autowired
-	private IComprasService comprasService;
+	
+//	@Autowired
+//	private IComprasService comprasService;
 
 	@RequestMapping("/validar")
 	public @ResponseBody String validarCompra(@RequestBody CompraBean bean) {
