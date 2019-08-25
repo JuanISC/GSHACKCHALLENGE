@@ -1,0 +1,379 @@
+.link1{
+	color:#990000;
+	text-decoration:underline;
+	font-size:12px;
+	font-weight: normal;
+	font-family: Verdana,Arial,Helvetiva,sans-serif;
+}
+.texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.ligalinksSupDer {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	}
+a.ligalinksSupDer:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+	}
+	.ligaSubmenu {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.textoRojoNormal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #990000;
+	text-decoration: none;
+	font-weight: normal;
+
+}
+
+
+a.ligaSubmenu:hover {
+	color: #FFC717;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.textoSubmenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFCC00;
+	text-decoration: none;
+}
+	.liga1 {
+	color: #333333;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+	.liga2 {
+	color: #666666;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+	.liga3 {
+	color: #12478B;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+	.liga4 {
+	color: #990000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+	.ligaInverDolar {
+	color: #990000;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+	a.liga1:hover {
+	color: #FF9900;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+	a.liga2:hover {
+	color: #FFC717;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+	a.liga3:hover {
+	color: #000000;
+	text-decoration: none;
+}
+a.liga4:hover {
+	color: #FF9900;
+}
+	.TITULO {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+}
+	.TITULOBanner {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #9E3F0F;
+	text-decoration: none;
+}
+.textoBOLD {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.Subtitulos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+.Subtitulos2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+}
+.Subtitulos3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+}
+.textoBLANCO {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.textoNARANJA {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFC717;
+	text-decoration: none;
+	font-weight: bold;
+}
+.liga3BLANCO {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.liga3BLANCO:hover {
+	color: #E08A43;
+	text-decoration: none;
+}
+
+.textoORANGE {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF9900;
+	text-decoration: none;
+	font-weight: bold;
+}
+.textoNegroHuella {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333333;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: center;
+	background: none;
+	padding: 12px;
+	font-style: normal;
+}
+.plecaTabla {
+	background-color: #CECFCE;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #4D4C4C;
+	text-decoration: none;
+}
+.tabla01 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #AD0419;
+	text-decoration: none;
+	background-color: #EFE7D6;
+}
+.tabla02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #F5F0EC;
+}
+.Opciones {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+}
+.textoCorrido {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.textoRojo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FC0000;
+	text-decoration: none;
+}
+
+
+.textoCorrido2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.textoBnrHomeRojo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #990000;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+.textoBnrHomeNegrita {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	font-weight: bold;
+}
+.style8 {color: #990000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.wpsbatituloA {
+	font-weight: bolder; font-size: small; color: firebrick; font-family: arial
+}
+
+.wpsbatexto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.wpsbatextoA {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.wpstextoinformativo {
+	font-size: 12px; color: #333333; font-family: arial;
+}
+.textoTiempoCarga {
+	color: #990000;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.buttonExpress{
+	border: 0;
+	background: none;
+	text-decoration: none;
+}
+.wpsbarenoscuro {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	background-color: #EFE7D6;
+}
+.wpsbarenclaro {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #F5F0EC;
+}
+.wpstextorojo {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	color: #CC0000;
+	text-decoration: none;
+	background-color: #EFE7D6;
+}
+
+.notification-container {
+    position: inherit;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    left: 15px;
+    
+    i {
+        color: #fff;
+    }
+}
+
+.notification-counter {   
+    position: inherit;
+    top: -2px;
+    left: 12px;
+    
+    background-color: rgb(248, 59, 30);
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 3px;
+    font: 8px Verdana;
+}
+
+
+
+ul {
+    background: #000;
+    width: 100%;
+    height: 50px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fake-notification {
+    font: 10px Arial;
+    margin-top: 50px;
+}
