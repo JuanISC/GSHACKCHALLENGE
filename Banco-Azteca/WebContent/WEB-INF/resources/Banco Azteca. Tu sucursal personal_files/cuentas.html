@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0063)https://web.bancoazteca.com.mx/eBanking/consultas/cuentasPre.do -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    	<!--<base href="https://web.bancoazteca.com.mx/eBanking/consultas/listadecuentas.jsp">--><base href=".">
+	    <link rel="stylesheet" href="./style.css" type="text/css">
+	    <meta http-equiv="Pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache">
+	    <meta http-equiv="expires" content="0">
+	    <meta name="GENERATOR" content="IBM WebSphere Studio">
+		<title>Mis Saldos - Banca por Internet de Banco Azteca -</title>
+<style>
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #AD0419; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px;    height: 10px;
+     margin: 23px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+</style>
+<script language="Javascript">
+    function mensaje(){
+        if(document.getElementById("tarjAct")!=null){
+            if(document.getElementById("tarjAct").name >= 1){
+                document.getElementById("mensaje").style.display="inline";
+                /*si hay tarjetas pendientes y son infinite o platinum no mostrar rowTablaTarjetasAlnova*/
+                //document.getElementById("rowTablaTarjetasAlnova").style.display="none";
+                //document.all["mensaje"].style.visibility='visible';
+            }else if(document.getElementById("tarjAct").name < 1){
+                document.getElementById("mensaje").style.display="none";
+                /*si no hay tarjetas pendientes y son infinite o platinum mostrar rowTablaTarjetasAlnova*/
+                //document.getElementById("rowTablaTarjetasAlnova").style.display="inline";
+                //alert(document.getElementById("tarjAct").name);
+            }
+        }else{
+            document.getElementById("mensaje").style.display="none";
+            //alert("Prueba fallida")
+        }
+    }
+   function permiteModificar(){
+	   window.open('../seguridad/redirigeNivelSolicitado.do',"OpenWindow", "scrollbars=yes , toolbar=no, directories=no, menubar=no, location=no, resizable=1, width=800, height=800");
+   }
+   function permiteCuentas(){
+	   window.open('../seguridad/listaCuentasInicio.do',"OpenWindow", "scrollbars=yes , toolbar=no, directories=no, menubar=no, location=no, resizable=1, width=800, height=600");
+   }
+   function permiteAutorizaciones(){
+	   window.open('../seguridad/autorizacionesPendientes.jsp',"OpenWindow", "scrollbars=yes , toolbar=no, directories=no, menubar=no, location=no, resizable=1, width=800, height=800");
+   }
+   function submitForm(method, credito){
+  			document.creditoForm.method.value = method;
+  			document.creditoForm.credito.value = credito;
+  			document.creditoForm.submit();
+   }
+
+
+      	function firmaAzteca(){
+			popupWindow=window.open('/eBanking/dispositivos/popup_firma.jsp', 'firmaAzteca' , 'width=600,height=750,scrollbars=yes,resizable=false');
+			popupWindow.focus();
+      	}
+
+       	// Anadido por Guillermo Reséndiz Infanzón
+      	function ayudaSWF(){
+			popupWindow=window.open('/eBanking/ayudas/pagoServicios.jsp', 'ayudaPagoServicios' , 'width=820,height=610,resizable=false');
+			popupWindow.focus();
+      	}
+
+
+      	function ayudaCSM(){
+			popupWindow=window.open('/eBanking/ayudas/csm.htm', 'ayudaConsultaSaldos' , 'width=820,height=610,resizable=false');
+			popupWindow.focus();
+      	}
+
+	function MM_findObj(n, d) { //v4.01
+				var p,i,x;
+				if(!d)
+					d=document;
+				if((p=n.indexOf("?"))>0&&parent.frames.length) {
+					d=parent.frames[n.substring(p+1)].document;
+					n=n.substring(0,p);
+				}
+				if(!(x=d[n])&&d.all)
+					x=d.all[n];
+				for (i=0;!x&&i<d.forms.length;i++)
+					x=d.forms[i][n];
+				for(i=0;!x&&d.layers&&i<d.layers.length;i++)
+					x=MM_findObj(n,d.layers[i].document);
+				if(!x && d.getElementById)
+					x=d.getElementById(n);
+
+				return x;
+			}
+
+        function imagenProm(imagen)
+        {
+            document.getElementById('imgPromocion').src = '/eBanking' + imagen;
+        }
+ function firmaAzteca(){
+                popupWindow=window.open('/eBanking/dispositivos/popup_cs.html', 'firmaAzteca' , 'width=600,height=550,scrollbars=yes,resizable=false');
+                popupWindow.focus();
+            }
+</script>
+    <script type="text/JavaScript">
+    <!--
+        function MM_openBrWindow(theURL,winName,features) { //v2.0
+            window.open(theURL,winName,features);
+        }
+    //-->
+    </script>
+<script language="Javascript" src="./Scripts(1).js">
+</script>
+<script type="text/javascript">
+<!--
+	dataLayer = [];
+	dataLayer.push({
+	'eventCategory':'Cuentas',
+	'eventLabel':'Consulta de saldos',
+	'eventAction':'Consultas',
+	'event':'trackEvent'
+	});
+//-->
+</script>
+	</head>
+
+        <body onload="mensaje()">
+
+<table width="100%">
+	<tbody><tr>
+		<td align="center" width="90%" valign="top">
+			<div align="center">
+			<table width="100%">
+				<tbody><tr>
+					<td width="20%">Último acceso: 25/Ago/19 12:51:41 hrs</td>
+					<td width="60%" align="center"><p><font color="#333333" size="2" face="Verdana, Arial, Helvetica, sans-serif">Hola, <strong>Víctor Hugo Sánchez Mendizábal</strong></font></p></td>
+					<td width="20%"></td>
+				</tr>
+			</tbody></table>
+							
+				<div class="wpstextoinformativo">
+					(Número de Cliente Único: 0000 0000 0000 2 )
+				</div>
+			
+			
+			<div class="wpsbatitulo">
+				<br>
+			      <font color="#000066" size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>
+			        <strong>Seguridad adicional</strong>
+			        </b>
+			      </font>
+			</div>
+						<div class="onoffswitch">
+						<label>Activar/Desactivar:</label> 
+							<input type="checkbox" name="onoffswitch"
+								class="onoffswitch-checkbox" id="myonoffswitch">
+							<label class="onoffswitch-label" for="myonoffswitch"> <span
+								class="onoffswitch-inner"></span> 
+							</label>
+						</div>
+						<table cellpadding="1" border="0">
+				
+
+				<tbody>
+			<tr>
+									<td class="wpstextoinformativo" colspan="6" align="center">
+
+					* Podrá activar y desactivar esta función en cualquier momento, la información de configuración generada será almacenada.
+
+				</td>
+			</tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+	</tbody>
+	<div class="fake-notification">
+    <button>Generate a fake notification</button>
+</div>
+        <!--Fin de Mensaje de Activacion  -->
+	<table cellpadding="1" border="0">
+
+						
+	
+		
+
+			
+		
+
+			
+		
+
+			
+		
+
+			
+		
+
+			
+		
+		
+	
+				
+
+			<!--INICIO despliegue de tarjetas Infinite-->
+
+				
+			<!--FIN despliegue de tarjetas Infinite-->
+
+
+			<tbody><tr>
+				<td><br><br></td>
+			</tr>
+		</tbody></table>
+		</div>
+
+
+
+
+			<!--Tarjetas Azteca-->
+
+			
+
+			<!--fin de tarjetas Azteca-->
+
+	<!--Tarjetas Corporativa-->
+	  
+		 
+		 	   
+    <!--fin de tarjeta corporativa-->
+
+<!--CUENTA REPORTOS-->
+<br><br>
+<center><strong><font color="red" size="2"></font></strong></center>
+
+
+
+<!--FIN DE CUENTA REPORTOS-->
+
+	<!--GanareMas-->
+
+ <!--Aqui va e lo de ganare... si es que no sale bien!! jeje e-->
+
+			<br>
+
+    <!--fin de tarjeta corporativa-->
+
+	<div align="center">
+      
+	  
+	</div>
+
+
+
+
+			<!--========================Inicia modulo de seguridad-->
+
+			<table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tbody>
+				<tr>
+					<td width="8" height="8"><img height="8" src="./box_tl.gif" width="8"></td>
+					<td valign="top"><img height="1" src="./box_pixel.gif" width="100%"></td>
+					<td width="8" height="8"><img height="8" src="./box_tr.gif" width="8"></td>
+				</tr>
+				<tr>
+					<td align="left"><img height="100%" src="./box_pixel.gif" width="1"></td>
+					<td rowspan="2" align="left" valign="top">
+						<p align="center" class="textInformationRed">
+							<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+								<strong>Información:</strong>
+							</font>
+						</p>
+						<p align="center" class="textInformationRed">
+							<font color="#990000" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+								<strong>[IMPORTANTE]</strong>
+							</font>
+						</p>
+						<ul>
+
+							<li>
+								<font size="1" color="#333333" face="Verdana, Arial, Helvetica, sans-serif">Se registrara automáticamente del historial sitios de compra on-line recurrentes.</font>
+							</li>
+
+							<li>
+								<font size="1" color="#333333" face="Verdana, Arial, Helvetica, sans-serif">Se asginará automáticamente un monto máximo de compra</font>
+							</li>
+							<li>
+								<font size="1" color="#333333" face="Verdana, Arial, Helvetica, sans-serif">Se agregarán métodos adicionales de autenticación: Huella dactilar, SMS de seguridad, pregunta de seguridad.</font>
+							</li>
+						</ul>
+						<br>
+					</td>
+
+					<td align="right"><img height="100%" src="./box_pixel.gif" width="1"></td>
+				</tr>
+
+                                <tr>
+					<td align="left"><img height="100%" src="./box_pixel.gif" width="1"></td>
+					<td align="right"><img height="100%" src="./box_pixel.gif" width="1"></td>
+				</tr>
+
+				<tr>
+					<td align="left"><img height="100%" src="./box_pixel.gif" width="1"></td>
+					<td align="center" valign="middle">
+					</td>
+					<td align="right"><img height="100%" src="./box_pixel.gif" width="1"></td>
+				</tr>
+
+				<tr>
+					<td width="8" height="8"><img height="8" src="./box_bl.gif" width="8"></td>
+					<td valign="bottom"><img height="1" src="./box_pixel.gif" width="100%"></td>
+					<td width="8" height="8"><img height="8" src="./box_br.gif" width="8"></td>
+				</tr>
+				</tbody>
+			</table>
+
+
+
+		</td>
+
+
+		<td width="20%" align="left">
+			<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td height="3"></td>
+				</tr>
+
+			<tr align="left" valign="top">
+                            
+				<td valign="left" height="1">
+                               <a target="_top" href="https://web.bancoazteca.com.mx/eBanking/servicios/serviciosMenu.do">
+
+                               <!--<a target ="_top" onMouseOver="imagenProm(' < % = pathBann2 % >')" onMouseOut="imagenProm(' < % = pathBann % >')">-->
+
+                               <!--          <img src="/eBanking/images/150x400_inverAztecaPlazo.jpg" name="ImageGanareMas" border="0">  -->
+                                </a>
+                                </td>
+			</tr>
+			            <tr>
+			            <td align="left" valign="top" height="1">
+                                             
+                                             	
+                                            	  
+													  	 <a href="javascript:window.open(&#39;https://www.bancoazteca.com/app/nueva-app-banco-azteca.html&#39;);void 0"><img src="./150x400NuevaApp.jpg" border="0" name="firmaAztecaMovil"></a>      
+													  
+                                            	
+                                            
+                            </td>
+                             
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+		
+				<tr><td height="*">&nbsp;</td></tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<input id="tarjAct" name="0" type="hidden">
+	<br><!--
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">    
+  		<tr>
+  		<td><div align="center">
+  		
+  					  
+					   <a ><img border="0" src="/eBanking/images/templates/cuentasSaldosTemp.png"></a> 
+					  
+  		</div></td>
+    		<td><div align="center"><a href="https://ymz8k.app.goo.gl/eP3A"><img src="/eBanking/images/templates/cuentasSaldosTemp.png" width="700" height="92" usemap="#Map" border="0"> </a></div></td>
+  		</tr>
+	</table>			
+	--><!--<map name="Map"> 
+  		<area shape="rect" coords="161,58,215,102" href="https://itunes.apple.com/us/app/banco-azteca-movil/id422305545?l=es&mt=8" target="_blank">
+  		<area shape="rect" coords="238,58,299,98" href="https://play.google.com/store/apps/details?id=com.baz.rma" target="_blank">
+  		<area shape="rect" coords="313,59,386,104" href="http://www.windowsphone.com/es-mx/store/app/banco-azteca-m%C3%B3vil/82c4155b-6400-4492-88d2-2f4eb688c38c" target="_blank">
+	</map>-->
+	
+
+
+
+    
+        
+        
+        
+        <link rel="stylesheet" href="./bancoazteca.css" type="text/css">
+        
+        <meta name="GENERATOR" content="IBM WebSphere Studio">
+        <title>tiempoCarga.jsp</title>
+    
+    
+        <br><table align="center" width="100%">
+            
+            <tbody><tr>
+                <td background="./linea.gif"></td>
+            </tr>
+            
+            
+            <tr>
+                <td width="100%" align="left" style="textoTiempoCarga">  <p style="textoTiempoCarga" class="textoTiempoCarga"><span class="textoTiempoCarga">Tiempo (0.545 Segundos)</span></p></td>
+            </tr>
+             
+            <tr>
+                <td width="100%" align="left" style="textoTiempoCarga">  <p style="textoTiempoCarga" class="textoTiempoCarga"><span class="textoTiempoCarga">24/08/2019 21:15</span></p></td>
+            </tr>
+            <tr>
+                <td width="100%" align="left" style="textoTiempoCarga">  <p style="textoTiempoCarga" class="textoTiempoCarga"><span class="textoTiempoCarga">Folio: M24082019211547COM-13</span></p></td>
+            </tr>
+            <tr>
+                <td width="100%" align="left" style="textoTiempoCarga">  <p style="textoTiempoCarga" class="textoTiempoCarga"><a href="mailto:webmaster@bancoazteca.com.mx?subject=Error%20en%20eBanking&amp;body=Folio:%20%20M24082019211547COM-13%20del%2024/08/2019%2021:15">webmaster@bancoazteca.com.mx</a></p></td>
+            </tr>
+            
+        </tbody></table>
+    
+
+
+</body></html>
