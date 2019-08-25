@@ -15,7 +15,8 @@ public class ComprasController {
 //	@Autowired
 //	private IComprasService comprasService;
 
-	@RequestMapping(value="/validar", headers = "Accept=application/json", method = RequestMethod.POST)
+	@RequestMapping(value="/validar", headers = "Accept=application/json", method = RequestMethod.POST,
+			produces={"application/json", "application/xml"},consumes={"application/json", "application/xml"})
 	public @ResponseBody String validarCompra(@RequestBody CompraBean bean) {
 		try {
 //			bean = comprasService.validarCompra(bean);

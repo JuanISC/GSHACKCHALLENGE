@@ -12,7 +12,7 @@ public class CompraBean {
 	public void setPrecio(BigDecimal precio) {
 		this.precio = precio;
 	}
-	public String getHost() {
+	public String getHost() {	
 		return host;
 	}
 	public void setHost(String host) {
